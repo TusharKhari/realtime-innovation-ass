@@ -74,14 +74,14 @@ class HomeScreen extends StatelessWidget {
                         onClickDelete: (v) async {
                           v;
                           temp = _dbService.currentEmployeeBox;
-                          // _dbService.currentEmployeeBox.deleteAt(index);
+                           _dbService.currentEmployeeBox.deleteAt(index);
                           print(value.getAt(index)!.employeeName);
                           SnackMessages.showSnackMessgae(
                             msg: 'Employee data has been deleted',
                             btnName: 'undo',
                             onPressed: () async {
                               print("object");
-                              
+
                             },
                           );
                         },
